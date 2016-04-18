@@ -1,0 +1,135 @@
+## Situacion C1 ##
+print "Par o Impar"
+print "-----------"
+n= input ("Ingrese un Numero: ")
+if (n % 2) == 0:
+	print "Felicidades Ingreso un Numero Par" , n
+else:
+	print "El Numero Ingresado no es Par"
+## Situacion C2 ##
+print "Promedios"
+print "---------"
+p1 = input ("Ingrese su Primer Valor: ")
+p2 = input ("Ingrese su Segundo Valor: ")
+p3 = input ("Ingrese su Tercer Valor: ")
+pt = (p1 + p2 + p3) / 3
+print "El Promedio es de: ", pt
+if (p1 == pt):
+	print "El Primer Valor es igual al Promedio"
+elif (p1 > pt):
+	print "El Primer Valor es mayor al Promedio"
+if (p2 == pt):
+	print "El Segundo Valor es igual al Promedio"
+elif (p2 > pt):
+	print "El Segundo Valor es mayor al Promedio"
+if (p3 == pt):
+	print "El Tercer Valor es igual al Promedio"
+elif (p3 > pt):
+	print "El Tercer Valor es mayor al Promedio"
+## Situacion C3 ##
+print "De Menor a Mayor"
+print "----------------"
+n1 = input ("Ingrese un Primer Valor: ")
+n2 = input ("Ingrese un Segundo Valor: ")
+n3 = input ("Ingrese un Tercer Valor: ")
+if (n1 < n2 and n1 < n3):
+	print n1
+	if (n2 < n3):
+		print n2
+		print n3
+else:
+	print n3
+	print n2
+if (n2 < n1 and n2 < n3):
+	print n2
+	if (n1 < n3):
+		print n1
+		print n3
+else:
+	print n3
+	print n1
+if (n3 < n1 and n3 < n2):
+	print n3
+	if (n1 < n2):
+		print n1
+		print n2
+else:
+	print n2
+	print n1
+## Situacion C4 ##
+print "Facturacion Electronica"
+print "......................."
+im1 = input ("Ingrese el Importe Total a Pagar: ")
+im2 = input ("Ingrese el Importe de los Impuestos: ")
+if (im1 > 5000):
+	print "El Monto es superior para ser considerado como Consumidor Final"
+imt = (im1 - im2)
+if (imt > 0):
+	print "El Importe Neto es de: ", imt
+elif (imt == 0):
+	print "Error 2: El Importe Neto es Cero"
+## Situacion C5 ##
+print "Jubilaciones"
+print "............"
+edad = input ("Ingrese su edad: ")
+servi = input ("Ingrese su anio de antiguedad: ")
+if (edad >= 60 and servi <= 25):
+	print "Categoria: Jubilacion por Edad"
+if (edad < 60 and servi > 25):
+	print "Categoria: Jubilacion por Antiguedad Joven"
+if (edad > 60 and servi > 25):
+	print "Categoria: Jubilacion por Antiguedad Adulta "
+## Situacion C7 ##
+print "Anio Bisiesto"
+print "-------------"
+anio = input ("Ingrese un anio: ")
+if (anio % 4 == 0 and anio % 100 != 0 or anio % 400 == 0):
+	print "El Anio ingresado es Bisiesto"
+else:
+	print "El Anio ingresado no es Bisiesto"
+## Situacion C9 ##
+print "Superficies/Areas"
+print "-----------------"
+print "1. Area del Triangulo"
+print "2. Area del Circulo"
+unodos = input ("Ingrese el Area que desea calcular: ")
+if (unodos == 1):
+	print "Area del Triangulo"
+	print "------------------"
+	base = input ("Ingrese el valor de la base del Triangulo: ")
+	altu = input ("Ingrese el valor de la altura del Triangulo: ")
+	area= (base * altu) / 2
+	print "El Area del Triangulo es de: ", area
+elif (unodos == 2):
+	print "Area del Circulo"
+	print "----------------"
+	radio = input ("Ingrese el valor del Radio: ")
+	pii = 3.1416
+	areaa= (radio **2)* pii
+	print "El Area del Circulo es de: ", areaa
+else:
+	print "La opcion elegida no corresponde a ningunas de las opciones"
+## Situacion C11 ##
+print "Extras"
+print "------"
+print "1. Ha asistido a trabajar todo el mes "
+print "2. No ha asistido a trabajar todo el mes "
+undos = input ("Ingrese la opcion que corresponda: ")
+if (undos == 1):
+	print "Horas Extras trabajadas el Dia Domingo "
+	print "----------------------------------------"
+	h = input ("Ingrese las horas trabajadas el Dia Domingo: ")
+	if (h >= 3 and h <=5):
+		print ("Tiene un pago adiccional, en concepto de horas extras del 3% ")
+	elif (h >= 6 and h <= 10):
+		print ("Tiene un pago adiccional, en concepto de horas extras del 10% ")
+	else:
+		print "No posee pago adiccional"
+elif (undos == 2):
+	print "Horas Extras trabajadas el Dia Domingo"
+	print "--------------------------------------"
+	h = input ("Ingrese las horas trabajadas el Dia Domingo: ")
+	if (h >= 6 and h <= 10):
+		print ("Tiene un pago adiccional, en concepto de horas extras del 2% ")
+	else:
+		print ("No tiene ningun pago adiccional")
